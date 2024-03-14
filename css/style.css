@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+.container {
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 919px;
+}
+main .container .box .card {
+  padding: 50px 50px 60px 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+main .container .box .card:first-child {
+  background: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+main .container .box .card:first-child a.btn {
+  color: hsl(31, 77%, 52%);
+}
+main .container .box .card:nth-child(2) {
+  background: hsl(184, 100%, 22%);
+}
+main .container .box .card:nth-child(2) a.btn {
+  color: hsl(184, 100%, 22%);
+}
+main .container .box .card:last-child {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+main .container .box .card:last-child a.btn {
+  color: hsl(179, 100%, 13%);
+}
+main .container .box .card img {
+  margin-bottom: 30px;
+}
+main .container .box .card h1 {
+  margin-bottom: 25px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+main .container .box .card p {
+  letter-spacing: 1px;
+  line-height: 1.7;
+  margin-bottom: 100px;
+}
+main .container .box .card a.btn {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: hsl(0, 0%, 95%);
+}
+main .container .box .card a.btn:hover {
+  border: 3px solid hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 100%, 0.75);
+  background: transparent;
+}
+main .container .attribution {
+  padding: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+main .container .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 767px) {
+  main {
+    height: 100%;
+  }
+  main .container {
+    margin-top: 50px;
+  }
+  main .container .box {
+    grid-template-columns: 1fr;
+  }
+  main .container .box .card:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  main .container .box .card:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

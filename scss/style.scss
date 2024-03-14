@@ -1,0 +1,95 @@
+@use "variables" as v;
+@use "global";
+
+// Main
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    .box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 919px;
+      .card {
+        padding: 50px 50px 60px 50px;
+        color: v.$TransparentWhite;
+        &:first-child {
+          background: v.$BrightORange;
+          border-radius: 10px 0 0 10px;
+          a.btn {
+            color: v.$BrightORange;
+          }
+        }
+        &:nth-child(2) {
+          background: v.$DarkCyan;
+          a.btn {
+            color: v.$DarkCyan;
+          }
+        }
+        &:last-child {
+          background: v.$VeryDarkCyan;
+          border-radius: 0 10px 10px 0;
+          a.btn {
+            color: v.$VeryDarkCyan;
+          }
+        }
+        img {
+          margin-bottom: 30px;
+        }
+        h1 {
+          margin-bottom: 25px;
+          font-family: v.$secondaryFont;
+
+          font-size: 40px;
+          text-transform: uppercase;
+        }
+        p {
+          letter-spacing: 1px;
+          line-height: 1.7;
+          margin-bottom: 100px;
+        }
+        a.btn {
+          text-decoration: none;
+          font-family: v.$primaryFont;
+          padding: 15px 35px;
+          border-radius: 50px;
+          background: v.$VeryLightGray;
+          &:hover {
+            border: 3px solid v.$VeryLightGray;
+            color: v.$TransparentWhite;
+            background: transparent;
+          }
+        }
+      }
+    }
+    //
+    .attribution {
+      padding: 2em;
+      font-size: 11px;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    height: 100%;
+    .container {
+      margin-top: 50px;
+      .box {
+        grid-template-columns: 1fr;
+        .card {
+          &:first-child {
+            border-radius: 10px 10px 0 0;
+          }
+          &:last-child {
+            border-radius: 0 0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+// Main
