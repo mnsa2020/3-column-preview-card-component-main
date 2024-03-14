@@ -31,7 +31,7 @@ Users should be able to:
 | Desktop version                                     |                   Mobile Version                   |
 | --------------------------------------------------- | :------------------------------------------------: |
 | ![Solution Screenshot](./design/desktop-design.jpg) | ![Solution Screenshot](./design/mobile-design.jpg) |
-| ![Solution Screenshot](./Screenshot/mobile.png)     |  ![Solution Screenshot](./Screenshot/mobile.png)   |
+| ![Solution Screenshot](./Screenshot/desktop.png)    |  ![Solution Screenshot](./Screenshot/mobile.png)   |
 
 ### Links
 
